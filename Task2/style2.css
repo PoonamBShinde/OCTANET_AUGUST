@@ -1,0 +1,201 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 0.88rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #8c78f0;
+
+}
+
+.container {
+  margin-top: 70px;
+  padding: 100px;
+  max-width: 100%;
+}
+
+
+.card {
+  box-shadow: 0 0.46875rem 2.1875rem rgba(4, 9, 20, 0.03),
+              0 0.9375rem 1.40625rem rgba(4, 9, 20, 0.03),
+              0 0.25rem 0.53125rem rgba(4, 9, 20, 0.05),
+              0 0.125rem 0.1875rem rgba(4, 9, 20, 0.03);
+  border-width: 0;
+  transition: all 0.2s;
+  border-radius: 10px;
+  overflow: hidden;
+  border-color: #341e2d;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  border-bottom-width: 1px;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 0.625rem;
+  height: 3.5rem;
+  background-color: #fff;
+  padding-left: 20px;
+}
+
+.card-header-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.card-footer {
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-footer input {
+  border: 2px solid #9c377e;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.card-footer .btn {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 1rem;
+  background-color:rgb(246, 161, 215);
+  width:200px;
+  align-self: center;
+  border-radius: 4px;
+
+}
+
+.list-group-item {
+  position: relative;
+  padding: 20px;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.list-group-item:last-child {
+  margin-bottom: 0;
+}
+
+
+.widget-heading {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.widget-subheading {
+  color: #858a8e;
+  font-size: 0.875rem;
+}
+
+
+.btn {
+  outline: none !important;
+  transition: all 0.15s ease-in-out;
+}
+
+.btn-outline-success,
+.btn-outline-danger,
+.btn-outline-info {
+  padding: 8px 12px;
+  font-size: 0.875rem;
+  border-radius: 6px;
+}
+
+.btn-outline-success {
+  color: #3ac47d;
+  border-color: #3ac47d;
+}
+
+.btn-outline-danger {
+  color: #f93e3e;
+  border-color: #f93e3e;
+}
+
+.btn-outline-info {
+  color: #17a2b8;
+  border-color: #17a2b8;
+}
+
+.btn-outline-success:hover {
+  color: #fff;
+  background-color: #3ac47d;
+  border-color: #3ac47d;
+}
+
+.btn-outline-danger:hover {
+  color: #fff;
+  background-color: #f93e3e;
+  border-color: #f93e3e;
+}
+
+.btn-outline-info:hover {
+  color: #fff;
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+}
+
+.todo-indicator {
+  position: absolute;
+  width: 4px;
+  height: 60%;
+  border-radius: 0.3rem;
+  left: 0.625rem;
+  top: 20%;
+  opacity: .6;
+  transition: opacity .2s;
+}
+
+.todo-indicator.bg-primary {
+  background-color: #3f6ad8;
+}
+
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #3f6ad8;
+  border-color: #3f6ad8;
+}
+
+.custom-control-label::before {
+  border-radius: 6px;
+  background-color: #f8f9fa;
+  border: 2px solid #ced4da;
+  width: 24px;
+  height: 24px;
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+  border-radius: 6px;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+
+@media (max-width: 768px) {
+  .card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+  }
+
+  .card-header-title {
+    font-size: 1rem;
+  }
+
+  .list-group-item {
+    padding: 15px;
+  }
+
+  .card-footer {
+    padding: 15px;
+  }
+}
